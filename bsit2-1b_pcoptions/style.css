@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.content {
+    padding: 16px;
+    height: 2000px;
+
+    this is for testing the scrolling of the website ahahaha
+}*/
+
+@font-face {
+    font-family: 'Momotrust';
+    src: url('fonts/MomoTrustDisplay-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'spider';
+    src: url('fonts/Spider.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'spiderwoman';
+    src: url('fonts/Spiderwoman.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'spider';
+    src: url('fonts/SPIDER-MAN ECLIPSE.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'oldschool';
+    src: url('fonts/New Athletic M54.ttf') format('truetype');
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*---------------THIS IS FOR MAIN HEADER AND NAVIGATION------------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+
+.main-header{
+    background-image: linear-gradient(to right, red, rgb(156, 0, 0));
+    height: 85px;
+    width: auto;
+}
+
+#brand-signature{
+    margin-top: 20px;
+    margin-right: 40px;
+    float: right;
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-navigation{
+    position: sticky;
+    top: 0;
+    background-color: rgb(63, 0, 0);
+    height: 40px;
+    width: auto;
+    z-index: 1000;
+    overflow: hidden;
+    
+}
+
+
+.top-navigation a {
+    transition: background 0.3s;
+    float: left;
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .top-navigation a:hover {
+    background-color: rgb(136, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  
+
+  .top-navigation a.split {
+    float: right;
+    background-color: rgb(63, 0, 0);
+    color: white;
+  }
+
+  .top-navigation a.split:hover {
+
+    background-color: rgb(128, 0, 0);
+    color: rgb(255, 255, 255);
+    
+  }
+
+  /*--------------THIS IS FOR HOME SECTION-------------------*/
+
+#HOME {
+    background-image: linear-gradient(to right, rgb(255, 58, 107), white, transparent);
+    display: flex;               /* side-by-side layout */
+    align-items: center;         /* vertically centers text with the box */
+    justify-content: center;     /* centers the whole block horizontally */
+    height: 100vh;               /* full screen height */
+    gap: 50px;                   /* space between image and text */
+  }
+
+#HOME a{
+    margin-left: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'spider';
+    font-weight: bolder;
+    color: rgb(255, 0, 64);
+}
+
+#HOME a:hover{
+    color: #1a0003;
+}
+
+.product-image img{
+    width: auto;
+    height: auto;
+    
+  }
+
+.product-info {
+    text-align: left;
+  }
+
+.product-info h2 {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(80, 0, 0));
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: 'spider', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.product-info h1 {
+    color: rgb(138, 0, 0);
+    font-weight: bold;
+    font-family: 'Momotrust', sans-serif;
+    font-size: 40px;
+    margin: 10px 0;
+    }
+    
+.product-info p {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Momotrust', sans-serif;
+    margin: 5px 0;
+    }
+
+#price{
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: rgb(85, 0, 21);
+}
+
+
+
+#promotion{
+    font-family: 'Momotrust', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(121, 0, 0);
+}
+
+#services{
+    font-family: 'Momotrust', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(121, 0, 0);
+}
+
+#branch{
+    font-family: 'Momotrust', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(121, 0, 0);
+}
+
+#about{
+    font-family: 'Momotrust', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(121, 0, 0);
+}
+
+#support{
+    font-family: 'Momotrust', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(121, 0, 0);
+}
+
+
+/*------------THIS IS FOR SLIDESHOW CAROUSEL---------------------*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+
+.productbanner {
+    display: none;
+  }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+.prev:hover, .next:hover {
+    background-color: rgba(78, 0, 0, 0.8);
+    }
+
+.text {
+    background-image: linear-gradient(to right, black, rgb(36, 0, 0, 0.5));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+      
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+      
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(0, 0, 0);
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+    }
+      
+.active, .dot:hover {
+    background-color: #ff0000;
+    }
+      
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+      
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+/*--------------THIS IS FOR SERVICE----------------*/
+
+.service-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-rows: minmax(100px, auto);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box1{
+    background-color: #e6e3e3;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 10px;
+}
+
+.box1:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box1 img{
+    height: auto;
+    width: auto;
+}
+
+.shop-info{
+    text-align: left;
+}
+
+.shop-info h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.shop-info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.box2{
+    background-color: #e6e3e3;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 10px;
+}
+
+.box2:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box2 img{
+    height: auto;
+    width: auto;
+}
+
+.branch-info{
+    text-align: left;
+}
+
+.branch-info h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.branch-info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.box3{
+    background-color: #e6e3e3;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 10px;
+}
+
+.box3:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box3 img{
+    height: auto;
+    width: auto;
+}
+
+.branch-info{
+    text-align: left;
+}
+
+.support-info h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.support-info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+/*---------------------------------*/
+
+/*------------THIS IS FOR BRANCHES-----------jsko nakakapagod ahahah----------*/
+
+.location1{
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 30px;
+}
+
+.location1 img{
+    height: 300px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+.gilmore-info{
+    text-align: left;
+}
+
+.location1 h1{
+    font-family: 'Momotrust', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: darkred;
+}
+
+.location1 p{
+    font-family: 'Momotrust', sans-serif;
+    font-size: 13px;
+    color: rgb(26, 22, 22);
+}
+
+.location2{
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 30px;
+}
+
+.location2 img{
+    height: 300px;
+    width: 500px;
+    margin-left: 40px;
+}
+
+.laguna-info{
+    text-align: left;
+}
+
+.location2 h1{
+    font-family: 'Momotrust', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: darkred;
+}
+
+.location2 p{
+    font-family: 'Momotrust', sans-serif;
+    font-size: 13px;
+    color: rgb(26, 22, 22);
+}
+
+
+/*---------------------------------*/
+
+/*----------THIS IS THE ABOUT SECTIONS-----------------------*/
+
+.about-container{
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-container img{
+    height: 300px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+.about-info{
+    text-align: left;
+}
+
+.about-info h1{
+    font-style: italic;
+    font-family: 'Momotrust', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: darkred;
+}
+
+.about-info p{
+    margin-right: 10px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.about-container2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: left;         
+    justify-content: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+
+/*---------------------------------*/
+
+.support-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .support-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .support-section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .support-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .support-box p {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .support-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .support-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+  }
+  
+  .support-form button {
+    padding: 8px 16px;
+    background-color: #5e0707;
+    color: white;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .support-form button:hover {
+    background-color: #c90011;
+  }
+  
+  .support-box small {
+    font-size: 12px;
+    color: #555;
+  }
+  
+/*---------------------------------*/
+
+/*----------FOOTER FOR THE WEBSITE---------*/
+
+.footer{
+    background-color: rgb(75, 19, 19);
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+.footer-section h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li{
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover{
+    color: red;
+}
+
+
+
+
+/*---------------------------------*/
+
+
+
+/*---------------------------------*/

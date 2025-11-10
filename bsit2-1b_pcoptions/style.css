@@ -252,7 +252,122 @@ header {
 /*---------------------------------*/
 /*--------------THIS IS FOR SERVICE----------------*/
 
+.service-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-rows: minmax(100px, auto);
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
+.box1{
+    background-color: #e6e3e3;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 10px;
+}
+
+.box1:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box1 img{
+    height: auto;
+    width: auto;
+}
+
+.shop-info{
+    text-align: left;
+}
+
+.shop-info h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.shop-info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.box2{
+    background-color: #e6e3e3;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 10px;
+}
+
+.box2:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box2 img{
+    height: auto;
+    width: auto;
+}
+
+.branch-info{
+    text-align: left;
+}
+
+.branch-info h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.branch-info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.box3{
+    background-color: #e6e3e3;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    gap: 10px;
+}
+
+.box3:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box3 img{
+    height: auto;
+    width: auto;
+}
+
+.branch-info{
+    text-align: left;
+}
+
+.support-info h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.support-info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+}
 
 
 
@@ -308,4 +423,5 @@ header {
 
 
 /*---------------------------------*/
+
 
